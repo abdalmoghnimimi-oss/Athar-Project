@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>تواصل معنا - أثر</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="../css/toastr.min.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>أثر</h1>
+        <p>متحف الأشياء المنسية</p>
+    </header>
+
+
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="museum.html">المتحف</a>
+        <a href="story.html">قصتنا</a>
+        <a href="account.html">الحساب</a>
+        <a href="contact.html">تواصل معنا</a>
+    </nav>
+
+
+    <section>
+
+        <h2>تواصل معنا</h2>
+
+        <p id="contactText">
+            يسعدنا استقبال رسائلك واقتراحاتك حول متحف أثر.
+        </p>
+
+
+        <div class="contact-info">
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                info@athar.com
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                777000000
+            </p>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                صنعاء - اليمن
+            </p>
+
+        </div>
+
+
+        <form id="contactForm">
+
+            <label>الاسم:</label>
+            <input type="text">
+
+            <label>البريد الإلكتروني:</label>
+            <input type="email">
+
+            <label>الرسالة:</label>
+            <textarea rows="5"></textarea>
+
+            <button type="submit" class="btn btn-primary">إرسال</button>
+
+        </form>
+
+    </section>
+
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2026 - متحف أثر</p>
+    </footer>
+
+    <script src="../js/jquery.min.js"></script>
+
+    <script src="../js/toastr.min.js"></script>
+
+    <script src="../js/all.min.js"></script>
+
+    <script>
+    $(document).ready(function () {
+
+        $("#contactForm").submit(function (event) {
+
+            event.preventDefault();
+
+           toastr.success("تم إرسال الرسالة بنجاح");
+
+            $("#contactForm")[0].reset();
+
+        });
+
+    });
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>المتحف - أثر</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>أثر</h1>
+        <p>متحف الأشياء المنسية</p>
+    </header>
+
+
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="museum.html">المتحف</a>
+        <a href="story.html">قصتنا</a>
+        <a href="account.html">الحساب</a>
+        <a href="contact.html">تواصل معنا</a>
+    </nav>
+
+
+    <section>
+        <h2>معروضات المتحف</h2>
+
+        <div class="museum-grid">
+
+            <div class="item">
+                <h3>شريط الكاسيت</h3>
+                <p>
+                    وسيلة قديمة كانت تستخدم لتسجيل وتشغيل الصوت
+                    قبل انتشار الملفات الرقمية.
+                </p>
+                <button type="button" id="cassetteBtn">عرض التفاصيل</button>
+            </div>
+
+
+            <div class="item">
+                <h3>الهاتف القديم</h3>
+                <p>
+                    هاتف كان يستخدم للاتصال قبل ظهور الهواتف المحمولة
+                    والأجهزة الذكية.
+                </p>
+                <button type="button" id="phoneBtn">عرض التفاصيل</button>
+            </div>
+
+
+            <div class="item">
+                <h3>الآلة الكاتبة</h3>
+                <p>
+                    جهاز كان يستخدم لكتابة النصوص والرسائل
+                    قبل انتشار أجهزة الكمبيوتر.
+                </p>
+            </div>
+
+
+            <div class="item">
+                <h3>القرص المرن</h3>
+                <p>
+                    وسيلة قديمة كانت تستخدم لحفظ ونقل الملفات
+                    قبل انتشار وحدات التخزين الحديثة.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2026 - متحف أثر</p>
+    </footer>
+
+    <div id="cassetteModal" class="modal">
+
+    <div class="modal-content">
+
+        <span id="closeCassette" class="close">&times;</span>
+
+        <h2>شريط الكاسيت</h2>
+
+        <div id="cassetteContent"></div>
+
+    </div>
+
+</div>
+
+
+<div id="phoneModal" class="modal">
+
+    <div class="modal-content">
+
+        <span id="closePhone" class="close">&times;</span>
+
+        <h2>الهاتف القديم</h2>
+
+        <div id="phoneContent"></div>
+
+    </div>
+
+</div>
+
+<script src="../js/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+
+        $("#cassetteBtn").click(function () {
+
+            $("#cassetteContent").load("cassette.html");
+
+            $("#cassetteModal").show();
+
+        });
+
+
+        $("#phoneBtn").click(function () {
+
+            $("#phoneContent").load("phone.html");
+
+            $("#phoneModal").show();
+
+        });
+
+
+        $("#closeCassette").click(function () {
+
+            $("#cassetteModal").hide();
+
+        });
+
+
+        $("#closePhone").click(function () {
+
+            $("#phoneModal").hide();
+
+        });
+
+    });
+</script>
+
+
+</body>
+
+</html>

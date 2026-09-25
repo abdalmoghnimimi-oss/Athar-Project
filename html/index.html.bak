@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>أثر - متحف الأشياء المنسية</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>أثر</h1>
+        <p>متحف الأشياء المنسية</p>
+    </header>
+
+
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="museum.html">المتحف</a>
+        <a href="story.html">قصتنا</a>
+        <a href="account.html">الحساب</a>
+        <a href="contact.html">تواصل معنا</a>
+    </nav>
+
+
+    <section>
+        <h2>مرحباً بك في متحف أثر</h2>
+
+        <p>
+            متحف أثر هو متحف إلكتروني بسيط يعرض مجموعة من الأشياء
+            التي كانت جزءاً من حياتنا في الماضي وأصبحت اليوم نادرة.
+        </p>
+
+        <p>
+            اكتشف معنا قصص الأدوات والأجهزة القديمة وتعرف على
+            الطريقة التي كان يستخدمها الناس في حياتهم اليومية.
+        </p>
+    </section>
+
+
+    <aside>
+        <h3>هل تعلم؟</h3>
+
+        <p>
+            كثير من الأجهزة التي نستخدمها اليوم مرت بمراحل طويلة
+            من التطور حتى وصلت إلى شكلها الحالي.
+        </p>
+    </aside>
+
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2026 - متحف أثر</p>
+    </footer>
+
+</body>
+
+</html>
